@@ -30,11 +30,6 @@ class="article article-type-<%= post.layout %>"
         <a href="<%- url_for(post.path) %>"><%= post.title %></a>
     </header>
     <div class="article-entry post-inner-html">
-        <% if (post.excerpt){ %>
-        <%- post.excerpt %>
-        <% } else { %>
-        <%- post.content %>
-        <% } %>
     </div>
     </div>
 
