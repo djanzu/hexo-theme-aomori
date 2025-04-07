@@ -14,7 +14,6 @@
     }
 %>
 <% if(is_post()){ %>
-    <!-- muemue -->
     <meta property="og:locale" content="<%= config.language %>" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content= "<% if (title){ %><%= title %> | <% } %><%= config.title %>"  />
@@ -26,7 +25,6 @@
     <meta property="og:description" content="<%= page.description || page.excerpt || config.description || config.title %>" />
     <meta name="twitter:title" content="<% if (title){ %><%= title %> | <% } %><%= config.title %>"/>
     <meta name="twitter:description" content="<%= page.description || page.excerpt || config.description || config.title %>"/>
-    <!-- <%= page.image %> -->
     <% if(page.image){ %>
     <meta property="og:image" content="<%= config.url + page.image %>" />
     <% } else { %>
@@ -66,7 +64,6 @@
     <meta property="og:url" content="<%= url %>" />
     <meta property="og:site_name" content="<%= config.description %>" />
     <meta property="article:publisher" content="<%= config.publisher%>" />
-    <!-- <%= page.image %> -->
     <% if(page.image){ %>
     <meta property="og:image" content="<%= config.url + page.image %>" />
     <% } else { %>
